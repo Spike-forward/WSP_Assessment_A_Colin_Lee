@@ -1,6 +1,7 @@
  ## Redesign the todolist app ## 
 
 <h3><b>  Postgres database setup </h3></b>
+The database should have two tables: users and todo.
 Table “users” should have the following properties:
 1. id
 2. username
