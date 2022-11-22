@@ -23,8 +23,9 @@ You need to create tables with the information above and insert some records to 
 private folder.
 
 <h3><b>Authentication</h3></b>
-User should login in order to view his/her todo items. Please create a login function with
-express-session. Website should redirect to the task list page after login successfully.
+1. User should login in order to view his/her todo items. 
+2. Please create a login function with express-session. 
+3. Website should redirect to the task list page after login successfully.
 
 <h3><b>Get all todo items</h3></b>
 1. In the task list page, the user should be able to view his/her all todo items. 

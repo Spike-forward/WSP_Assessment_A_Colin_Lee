@@ -1,0 +1,36 @@
+{
+    "name": "wsp_assessment_a_colin_lee",
+    "version": "1.0.0",
+    "description": "<h3><b>  Postgres database setup </h3></b>\r The database should have two tables: users and todo.\r Table “users” should have the following properties:\r 1. id\r 2. username\r 3. password\r Table “todo” should have the following properties:\r 1. id\r 2. title\r 3. description\r 4. is_completed\r 5. user_id\r You need to create tables with the information above and insert some records to the tables.",
+    "main": "index.js",
+    "scripts": {
+        "start": "ts-node main.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Spike-forward/WSP_Assessment_A_Colin_Lee.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Spike-forward/WSP_Assessment_A_Colin_Lee/issues"
+    },
+    "homepage": "https://github.com/Spike-forward/WSP_Assessment_A_Colin_Lee#readme",
+    "dependencies": {
+        "@types/bcryptjs": "^2.4.2",
+        "@types/express": "^4.17.14",
+        "@types/node": "^18.11.9",
+        "@types/pg": "^8.6.5",
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "express-session": "^1.17.3",
+        "pg": "^8.8.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.3"
+    },
+    "devDependencies": {
+        "@types/express-session": "^1.17.5"
+    }
+}
