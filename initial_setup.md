@@ -116,3 +116,10 @@ npm i pg @types/pg dotenv
 npm install bcryptjs @types/bcryptjs
 
 ```
+13. WSP 009 - install 'pg' and 'dotenv'
+connnect db via 'pg'
+
+```
+npm install pg dotenv
+npm install -D @types/pg
+```
