@@ -48,6 +48,13 @@ app.use((req, res) => {
   res.sendFile(path.join(__dirname, "public", "404.html"));
 });
 
+declare module "express-session" {
+  interface SessionData {
+    views: Record<string, number>;
+    user: { id: number };
+  }
+}
+
 const PORT = 8080;
 app.listen(PORT, () => {
   console.log(`listening at http://localhost:${PORT}`);
