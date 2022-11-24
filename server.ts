@@ -34,10 +34,10 @@ dbClient.connect();
 
 // Section 2: Routers
 import { userRoutes } from "./routers/userRoutes";
-import { contactRoutes } from "./routers/contactRoutes";
-import { isLoggedInAPI, isLoggedInStatic } from "./guards";
+import { todoRoutes } from "./routers/todoRoutes";
+import { isLoggedInAPI, isLoggedInStatic } from "./guard";
 
-app.use("/contacts", isLoggedInAPI, contactRoutes);
+app.use("/todo", isLoggedInAPI, todoRoutes);
 app.use(userRoutes);
 
 // Section 3: Serve static files
