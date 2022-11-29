@@ -40,6 +40,8 @@ npm init
         "index.js"
     ]
 }
+
+npm install / npm i 
 ```
 
 4. npm install typescript ts-node @types/node

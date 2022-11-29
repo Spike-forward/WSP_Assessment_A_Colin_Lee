@@ -25,6 +25,7 @@ async function login(req: express.Request, res: express.Response) {
 
   const user = queryResult.rows[0]; // get 1st record
   req.session["user"] = { userId: user.id };
-
+    
+  req.session["user"] = { id: user.id }; // for taking out the data from log-in to use it
   res.json({ message: "success" });
 }

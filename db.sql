@@ -22,5 +22,7 @@ CREATE TABLE todo (
 
 INSERT INTO "users" ("username", "password") VALUES ('colin', 'colin');
 INSERT INTO "users" ("username", "password") VALUES ('peter', 'peter');
+INSERT INTO "users" ("username", "password") VALUES ('bruce', 'bruce');
+
 
 INSERT INTO "todo" ("title", "description", "is_completed", "user_id") VALUES ('go to class','9am to 6pm go to computer class', 'yes', 1), ('go to dance', '7pm to 10pm go to latin dance class', 'not_yet', 2), ('go to bed', '11pm to 8am go sleeping', 'yes', 3);

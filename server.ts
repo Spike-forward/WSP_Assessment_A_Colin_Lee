@@ -15,9 +15,6 @@ app.use(
     secret: process.env.SESSION_SECRET ?? "helloworld",
     resave: true,
     saveUninitialized: true,
-    cookie: {
-      secure: process.env.NODE_ENV === "production",
-    },
   })
 );
 app.use((req, res, next) => {
@@ -45,15 +42,15 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(isLoggedInStatic, express.static(path.join(__dirname, "private")));
 
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, "public", "404.html"));
+  res.sendFile(path.join(__dirname, "public"));
 });
 
-declare module "express-session" {
-  interface SessionData {
-    views: Record<string, number>;
-    user: { id: number };
-  }
-}
+// declare module "express-session" {
+//   interface SessionData {
+//     views: Record<string, number>;
+//     user: { id: number };
+//   }
+// }
 
 const PORT = 8080;
 app.listen(PORT, () => {
